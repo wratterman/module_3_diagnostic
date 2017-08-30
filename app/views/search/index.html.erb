@@ -1,0 +1,8 @@
+<h1>All Stations for <%= @zip %></h1>
+
+<% @stations.each do |station| %>
+  <%= station.name %>
+  <%= station.address %>
+  <%= station.fuel_type %>
+  <%= station.open_hours %>
+<% end %>
