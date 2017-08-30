@@ -1,7 +1,7 @@
 class AltFuelService
   def initialize(zip)
     @zip  = zip
-    @base = "https://developer.nrel.gov/api/alt-fuel-stations/v1.json"
+    @base = "https://developer.nrel.gov/api/alt-fuel-stations/v1/"
   end
 
   def self.find_stations(zipcode)
@@ -9,7 +9,7 @@ class AltFuelService
   end
 
   def find_my_stations
-    get_url("?zip=#{zip}")
+    get_url("nearest.json?location=#{zip}&radius=6&limit=10")
   end
 
   def get_url(url)

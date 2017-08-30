@@ -5,6 +5,9 @@
     <li>Station: <%= station.name %></li>
     <li>Address: <%= station.address %></li>
     <li>Fuel Type: <%= station.fuel_type %></li>
-    <li>Open: <%= station.open_hours %></li>
+    <h3>Hours</h3>
+    <% station.open_hours.each do |day| %>
+    <li><%= day %></li>
+    <% end %>
   </ul>
 <% end %>
