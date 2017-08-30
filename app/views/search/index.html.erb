@@ -2,10 +2,10 @@
 
 <% @stations.each do |station| %>
   <ul>
-    <li>Station: <%= station.name %></li>
-    <li>Address: <%= station.address %></li>
-    <li>Fuel Type: <%= station.fuel_type %></li>
-    <h3>Hours</h3>
+    <li><h3>Station:</h3> <%= station.name %></li>
+    <li><h4>Address:</h4> <%= station.address %></li>
+    <li><h4>Fuel Type:</h4> <%= station.fuel_type %></li>
+    <h4>Hours</h4>
     <% station.open_hours.each do |day| %>
     <li><%= day %></li>
     <% end %>

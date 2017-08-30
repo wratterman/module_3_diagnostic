@@ -7,8 +7,8 @@ describe AltFuelService do
         stations = AltFuelService.find_stations("80203")
         station = stations.first
 
-        expect(stations.count).to eq(1)
-        expect(station[:station_name]).to eq("Wells Fargo Center")
+        expect(stations.count).to eq(10)
+        expect(station[:station_name]).to eq("UDR")
         expect(station[:city]).to eq("Denver")
       end
     end

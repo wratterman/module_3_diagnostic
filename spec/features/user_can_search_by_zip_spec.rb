@@ -12,7 +12,7 @@ describe "User Can Search By Zip" do
       expect(page).to have_content("1700 Sherman Street")
       expect(page).to have_content("Electric")
       # expect(page).to have_content("distance")
-      expect(page).to have_content("Open 24/7")
+      expect(page).to have_content("24 hours daily")
     end
   end
 end
