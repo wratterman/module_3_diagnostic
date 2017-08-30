@@ -4,7 +4,7 @@ describe "User Can Search By Zip" do
   it "user visits root page and searches for stations by zip" do
 
     visit "/"
-    fill_in["search[body]", with: "80203"]
+    fill_in("q", with: "80203")
     click_on "Locate"
 
     expect(current_path).to eq("/search?80203")
