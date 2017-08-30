@@ -1,5 +1,5 @@
 class SearchController < ApplicationController
   def index
-    binding.pry
+    render json: Station.find_all(params[:q])
   end
 end

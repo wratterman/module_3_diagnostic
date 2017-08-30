@@ -7,7 +7,7 @@ describe "User Can Search By Zip" do
     fill_in("q", with: "80203")
     click_on "Locate"
 
-    expect(current_path).to eq("/search?80203")
+    expect(current_path).to eq("/search")
     expect(page).to have_content("Wells Fargo Center")
     expect(page).to have_content("1700 Sherman Street")
     expect(page).to have_content("Electric")
